@@ -1,16 +1,23 @@
 import React from "react";
+import { useHistory } from "react-router";
 
 const Category = (props) => {
-  const { strCategory, strCategoryThumb, strCategoryDescription } =
-    props.category;
+  const { strMeal, strMealThumb, idMeal } = props.category;
+
+  const history = useHistory();
+  const viewMealButton = () => {
+    history.push(`/food/${idMeal}`);
+  };
   return (
-    <div>
-      <img className="block mx-auto" src={strCategoryThumb} alt={strCategory} />
-      <h1 className="text-3xl font-bold my-8">{strCategory}</h1>
-      <p className="overflow-auto h-32 p-4 rounded-xl scrollbar scrollbar-thumb-indigo-600 scrollbar-track-indigo-200">
-        <span className="text-xl font-bold">Description: </span>
-        {strCategoryDescription}
-      </p>
+    <div className="text-center">
+      <img className="block mx-auto mb-4" src={strMealThumb} alt={strMeal} />
+      <h1 className="text-3xl text-center font-bold h-16">{strMeal}</h1>
+      <button
+        className="mt-16 mb-2 bg-indigo-600 text-white rounded px-6 py-2"
+        onClick={viewMealButton}
+      >
+        View Meal
+      </button>
     </div>
   );
 };

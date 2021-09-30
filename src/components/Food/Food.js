@@ -6,7 +6,7 @@ const Food = (props) => {
 
   const history = useHistory();
   const linkUrl = `/food/${idMeal}`;
-  const linkCategories = `/categories`;
+  const linkCategories = `/categories/${strCategory}`;
 
   const handleDetailsButton = () => {
     history.push(linkUrl);

@@ -26,7 +26,7 @@ function App() {
           <Route path="/food/:foodID">
             <FoodDetails></FoodDetails>
           </Route>
-          <Route path="/categories">
+          <Route path="/categories/:foodCategory">
             <Categories></Categories>
           </Route>
           <Route path="/suggestion">
