@@ -27,16 +27,16 @@ const Home = () => {
         </div>
       </div>
       <div className="bg-hero-pattern bg-no-repeat bg-center bg-cover p-8 my-16 flex items-center justify-around">
-        <div className="w-1/2">
+        <div className="w-2/4">
           <img
-            className="block mx-auto"
+            className="block w-1/2 mx-auto"
             src="./shapes/person-img.png"
             alt="person"
           />
         </div>
-        <div className="ml-32 block ">
-          <h1 className="text-4xl font-bold block mx-auto w-1/2">About Us</h1>
-          <p className="text-xl leading-normal w-1/2 block mx-auto">
+        <div className=" block w-2/4">
+          <h1 className="text-4xl font-bold block mx-auto mb-12">About Us</h1>
+          <p className="text-xl leading-loose block mx-auto">
             What can I say I love food. My journey as a chef brought me from
             Teknaf to Tetulia and now to Dhaka, and who knows where else.The
             thing I love most about food is the interaction between people.
@@ -44,6 +44,12 @@ const Home = () => {
             cook, or that feeling when they try your food.
           </p>
         </div>
+      </div>
+      <div className="bg-gray-900 text-white text-center p-32">
+        <h1 className="text-indigo-600 font-bold text-4xl">FooodZa!</h1>
+        <p className="text-xl mt-6">
+          Eat healthy to live healthy. Live healthy to live happy
+        </p>
       </div>
     </>
   );
