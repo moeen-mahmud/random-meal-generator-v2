@@ -14,7 +14,7 @@ const Categories = () => {
   return (
     <div className="my-16">
       <h1 className="text-center text-4xl text-indigo-600 font-bold">
-        Explore {foodCategory} Foods
+        Explore {foodCategory} Meals
       </h1>
       <div className="grid grid-cols-3 place-items-center gap-16 my-16 px-16">
         {categories.map((category) => (

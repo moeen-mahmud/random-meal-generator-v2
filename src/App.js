@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-import Blog from "./components/Blog/Blog";
+
 import Categories from "./components/Categories/Categories";
 import FoodDetails from "./components/FoodDetails/FoodDetails";
 import Header from "./components/Header/Header";
@@ -31,9 +31,6 @@ function App() {
           </Route>
           <Route path="/suggestion">
             <Suggestion></Suggestion>
-          </Route>
-          <Route path="/blog">
-            <Blog></Blog>
           </Route>
         </Switch>
       </Router>

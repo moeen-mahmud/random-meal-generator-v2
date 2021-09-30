@@ -25,16 +25,9 @@ const Header = () => {
         <NavLink
           className="nav-link mr-8 text-lg"
           activeClassName="nav-link-active bg-indigo-600 py-2 px-6 text-white rounded"
-          to="suggestion"
+          to="/suggestion"
         >
           Suggestion
-        </NavLink>
-        <NavLink
-          className="nav-link mr-6 text-lg"
-          activeClassName="nav-link-active bg-indigo-600 py-2 px-6 text-white rounded"
-          to="blog"
-        >
-          Blog
         </NavLink>
       </nav>
     </div>

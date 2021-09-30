@@ -37,7 +37,7 @@ const SingleFood = (props) => {
               ))}
             </div>
             <div className="my-8">
-              <h2 className="my-4 text-2xl font-bold">Measures</h2>
+              <h2 className="my-4 text-2xl font-bold text-right">Measures</h2>
               {measures.map((measure) => (
                 <p className="text-right">{measure}</p>
               ))}
