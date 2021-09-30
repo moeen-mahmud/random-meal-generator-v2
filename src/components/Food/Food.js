@@ -34,7 +34,7 @@ const Food = (props) => {
             to={linkCategories}
             className="block underline text-indigo-600 text-md"
           >
-            Learn More
+            Explore Category
           </Link>
         </div>
       </div>
