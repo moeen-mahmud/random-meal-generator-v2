@@ -1,11 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <div className="header flex items-center justify-around my-6">
       <div className="brand-name">
-        <h1 className="text-4xl text-indigo-600 font-bold">FooodZa!</h1>
+        <h1 className="text-4xl text-indigo-600 font-bold">
+          <Link to="/">FooodZa!</Link>
+        </h1>
       </div>
       <nav>
         <NavLink

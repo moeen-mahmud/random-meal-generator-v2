@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 
@@ -11,6 +12,9 @@ import Suggestion from "./components/Suggestion/Suggestion";
 function App() {
   return (
     <div className="app-main">
+      <Helmet>
+        <title>FooodZa!</title>
+      </Helmet>
       <Router>
         <Header></Header>
         <Switch>

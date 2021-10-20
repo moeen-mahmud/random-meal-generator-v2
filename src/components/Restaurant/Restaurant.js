@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
+import useTitle from "../../hooks/useTitle";
 import Food from "../Food/Food";
 
 const Restaurant = () => {
   const [searchText, setSearchText] = useState("");
   const [foods, setFoods] = useState([]);
-
+  const { title } = useTitle();
   useEffect(() => {
     const url = `https://www.themealdb.com/api/json/v1/1/search.php?s=${searchText}`;
     fetch(url)
@@ -19,6 +21,9 @@ const Restaurant = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="block text-center">
         <input
           className="border-2 border-indigo-600 w-1/2 py-2 px-2 mt-16 rounded"

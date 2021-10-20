@@ -1,8 +1,11 @@
 import React, { useState } from "react";
+import { Helmet } from "react-helmet";
+import useTitle from "../../hooks/useTitle";
 import Suggested from "../Suggested/Suggested";
 
 const Suggestion = () => {
   const [meals, setMeals] = useState([]);
+  const { title } = useTitle();
 
   const generateButton = () => {
     const url = `https://www.themealdb.com/api/json/v1/1/random.php`;
@@ -13,6 +16,9 @@ const Suggestion = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="text-center mt-16">
         <h1 className="text-5xl font-bold text-indigo-600 mb-4">Hungry?</h1>
         <p className="text-xl">Get yourself a meal 🍲</p>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router";
 import Category from "../Category/Category";
 
@@ -13,6 +14,9 @@ const Categories = () => {
   }, [foodCategory]);
   return (
     <div className="my-16">
+      <Helmet>
+        <title>{foodCategory}</title>
+      </Helmet>
       <h1 className="text-center text-4xl text-indigo-600 font-bold">
         Explore {foodCategory} Meals
       </h1>

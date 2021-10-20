@@ -1,8 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
+import useTitle from "../../hooks/useTitle";
 
 const Home = () => {
+  const { title } = useTitle();
   return (
     <>
+      <Helmet>
+        <title>{title}</title>
+      </Helmet>
       <div className="flex items-center justify-around mt-16">
         <div className="ml-12 leading-loose">
           <h1 className="text-6xl leading-snug font-bold">
